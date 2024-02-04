@@ -1,6 +1,7 @@
 package com.form.RegLogin.Service;
 
 
+import com.form.RegLogin.Data.Details.CustomUserDetails;
 import com.form.RegLogin.Data.Entity.User;
 import com.form.RegLogin.Data.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,9 @@ public class CustomUserDetailsService  implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepo.findByEmail(username);
-
-        return null;
+        if (user == null) {
+            throw new UsernameNotFoundException("User not found");
+        }
+        return new CustomUserDetails(user);
     }
 }

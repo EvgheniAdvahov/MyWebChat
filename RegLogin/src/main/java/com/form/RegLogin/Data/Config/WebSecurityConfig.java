@@ -1,5 +1,6 @@
 package com.form.RegLogin.Data.Config;
 
+
 import com.form.RegLogin.Service.CustomUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,6 +15,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig  {
+
 
     @Bean
     UserDetailsService userDetailsService(){
