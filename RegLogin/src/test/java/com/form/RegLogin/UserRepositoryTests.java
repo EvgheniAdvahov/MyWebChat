@@ -31,7 +31,7 @@ public class UserRepositoryTests {
         user.setEmail("evghenii.gg@gmail.com");
         user.setPassword("1234");
         user.setFirstName("Evgheni");
-        user.setLastname("Advahov");
+        user.setLastName("Advahov");
 
         User savedUser = repo.save(user);
 
