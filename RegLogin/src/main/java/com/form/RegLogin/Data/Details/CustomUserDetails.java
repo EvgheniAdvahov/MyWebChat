@@ -14,6 +14,8 @@ public class CustomUserDetails  implements UserDetails {
         this.user = user;
     }
 
+
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
@@ -46,7 +48,7 @@ public class CustomUserDetails  implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return user.isEnabled();
     }
 
     public String getFullName() {
