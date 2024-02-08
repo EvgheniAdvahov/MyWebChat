@@ -1,4 +1,4 @@
-package com.evad.websocketchatonetoone.Data;
+package com.evad.websocketchatonetoone.Data.User;
 
 import lombok.Getter;
 import lombok.Setter;

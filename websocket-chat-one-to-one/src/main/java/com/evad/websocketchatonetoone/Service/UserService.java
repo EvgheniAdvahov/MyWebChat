@@ -1,7 +1,8 @@
 package com.evad.websocketchatonetoone.Service;
 
-import com.evad.websocketchatonetoone.Data.Status;
-import com.evad.websocketchatonetoone.Data.User;
+import com.evad.websocketchatonetoone.Data.User.UserRepository;
+import com.evad.websocketchatonetoone.Data.User.Status;
+import com.evad.websocketchatonetoone.Data.User.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

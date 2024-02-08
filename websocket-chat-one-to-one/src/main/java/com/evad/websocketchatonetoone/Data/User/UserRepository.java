@@ -1,7 +1,7 @@
-package com.evad.websocketchatonetoone.Service;
+package com.evad.websocketchatonetoone.Data.User;
 
-import com.evad.websocketchatonetoone.Data.Status;
-import com.evad.websocketchatonetoone.Data.User;
+import com.evad.websocketchatonetoone.Data.User.Status;
+import com.evad.websocketchatonetoone.Data.User.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
